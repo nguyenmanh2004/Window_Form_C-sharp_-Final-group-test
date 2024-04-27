@@ -2,6 +2,6 @@
 thành viên : - Nguyễn Văn Mạnh
              - Trần Văn Phúc
              - Phan Đức Thọ
-             -Trần Thị Như Quỳnh
+             -Trần Thị Như
 # đề tài : quản lý bán hàng
 
