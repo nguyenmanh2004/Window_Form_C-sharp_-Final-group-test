@@ -74,14 +74,14 @@
             // 
             this.txtserver.Location = new System.Drawing.Point(246, 78);
             this.txtserver.Name = "txtserver";
-            this.txtserver.Size = new System.Drawing.Size(100, 20);
+            this.txtserver.Size = new System.Drawing.Size(240, 20);
             this.txtserver.TabIndex = 3;
             // 
             // txtdatabase
             // 
             this.txtdatabase.Location = new System.Drawing.Point(246, 130);
             this.txtdatabase.Name = "txtdatabase";
-            this.txtdatabase.Size = new System.Drawing.Size(100, 20);
+            this.txtdatabase.Size = new System.Drawing.Size(240, 20);
             this.txtdatabase.TabIndex = 4;
             // 
             // label4
@@ -106,14 +106,14 @@
             // 
             this.txtuser.Location = new System.Drawing.Point(246, 186);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(100, 20);
+            this.txtuser.Size = new System.Drawing.Size(240, 20);
             this.txtuser.TabIndex = 7;
             // 
             // txtpass
             // 
             this.txtpass.Location = new System.Drawing.Point(246, 241);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(100, 20);
+            this.txtpass.Size = new System.Drawing.Size(248, 20);
             this.txtpass.TabIndex = 8;
             // 
             // button1
@@ -122,6 +122,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
+            this.button1.Text = "Connect";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
