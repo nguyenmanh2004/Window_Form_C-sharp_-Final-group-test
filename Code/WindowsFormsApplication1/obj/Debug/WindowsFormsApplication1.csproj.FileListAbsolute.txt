@@ -11,3 +11,15 @@ C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\Wind
 C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormBackground.resources
 C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormLogin.resources
 C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connect_database.resources
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connect_database.resources
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormBackground.resources
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormLogin.resources
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
