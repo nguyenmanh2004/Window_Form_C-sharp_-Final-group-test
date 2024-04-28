@@ -22,5 +22,10 @@ namespace WindowsFormsApplication1
             FormLogin frlogin = new FormLogin();
             frlogin.ShowDialog();
         }
+
+        private void FormBackground_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
