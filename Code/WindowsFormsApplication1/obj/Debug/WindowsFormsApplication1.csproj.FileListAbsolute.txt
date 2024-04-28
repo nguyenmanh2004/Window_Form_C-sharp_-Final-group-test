@@ -1,1 +1,13 @@
 Z:\Window_Form_C-sharp_-Final-group-test\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormBackground.resources
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormLogin.resources
+C:\Users\Administrator\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connect_database.resources
