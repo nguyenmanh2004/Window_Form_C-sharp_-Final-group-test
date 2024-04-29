@@ -73,6 +73,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2e4ba8bb7f27d1798836 {
+            get {
+                object obj = ResourceManager.GetObject("2e4ba8bb7f27d1798836", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7d3ad9f93d6e9330ca7f {
             get {
                 object obj = ResourceManager.GetObject("7d3ad9f93d6e9330ca7f", resourceCulture);
@@ -96,6 +106,16 @@ namespace WindowsFormsApplication1.Properties {
         internal static System.Drawing.Bitmap a281747cc0ea6eb437fb {
             get {
                 object obj = ResourceManager.GetObject("a281747cc0ea6eb437fb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ae21fbf83a64943acd75 {
+            get {
+                object obj = ResourceManager.GetObject("ae21fbf83a64943acd75", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
