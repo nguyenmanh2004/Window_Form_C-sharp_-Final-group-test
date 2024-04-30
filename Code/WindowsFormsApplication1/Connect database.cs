@@ -17,8 +17,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Connect_database : Form
     {
-        public string Serv;
-        public string Dat;
+       
         public Connect_database()
         {
             InitializeComponent();
@@ -43,8 +42,10 @@ namespace WindowsFormsApplication1
                
                 cnn.ConnectionString = connectionstring;
                 cnn.Open();
-                MessageBox.Show("ket noi thanh cong");
+                MessageBox.Show("kết nối thành công");
                 cnn.Close();
+                FormMain formMain = new FormMain();
+                formMain.ShowDialog();
 
             }
             catch (Exception ex)
