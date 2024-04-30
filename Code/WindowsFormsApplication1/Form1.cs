@@ -17,7 +17,11 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void label2_Click(object sender, EventArgs e)
+=======
+        private void tsmiKhachhang_Click(object sender, EventArgs e)
+>>>>>>> ece1a3e46a73e3ce6e87879e24cc1f4439bb04c7
         {
 
         }

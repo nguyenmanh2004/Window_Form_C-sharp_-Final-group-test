@@ -51,11 +51,29 @@
     <Compile Include="Connect database.Designer.cs">
       <DependentUpon>Connect database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBackground.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormBackground.Designer.cs">
       <DependentUpon>FormBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHangHoa.Designer.cs">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -63,16 +81,34 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Connect database.resx">
       <DependentUpon>Connect database.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBackground.resx">
       <DependentUpon>FormBackground.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHangHoa.resx">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -95,6 +132,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92a18688ae1f0041590e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c4276bc9925e3c00654f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7d3ad9f93d6e9330ca7f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1acff59136079859c116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5e2e48f29198747de08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a281747cc0ea6eb437fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b6ce220f83992dc77488.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e4ba8bb7f27d1798836.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ae21fbf83a64943acd75.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
