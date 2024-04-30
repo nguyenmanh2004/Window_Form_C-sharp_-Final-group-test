@@ -43,7 +43,9 @@ namespace WindowsFormsApplication1
                
                 cnn.ConnectionString = connectionstring;
                 cnn.Open();
-                MessageBox.Show("ket noi thanh cong"); cnn.Close();
+                MessageBox.Show("ket noi thanh cong");
+                cnn.Close();
+
             }
             catch (Exception ex)
             {
