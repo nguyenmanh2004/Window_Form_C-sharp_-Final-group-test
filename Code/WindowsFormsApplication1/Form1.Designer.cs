@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,117 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SpringGreen;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(138, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Chương trình quản lý";
+            this.button1.Location = new System.Drawing.Point(128, 112);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "khách hàng";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // button2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SpringGreen;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(222, 166);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "bán hàng";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.button2.Location = new System.Drawing.Point(239, 222);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Nhân viên";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(340, 112);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Hàng hoá";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(598, 376);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Name = "FormMain";
             this.Text = "Main";
-=======
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiKhachhang = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiHanghoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kháchHàngToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1334, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // kháchHàngToolStripMenuItem
-            // 
-            this.kháchHàngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiKhachhang,
-            this.tsmiHanghoa});
-            this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
-            this.kháchHàngToolStripMenuItem.Text = "Danh mục";
-            // 
-            // tsmiKhachhang
-            // 
-            this.tsmiKhachhang.Name = "tsmiKhachhang";
-            this.tsmiKhachhang.Size = new System.Drawing.Size(224, 26);
-            this.tsmiKhachhang.Text = "Khách hàng";
-            this.tsmiKhachhang.Click += new System.EventHandler(this.tsmiKhachhang_Click);
-            // 
-            // tsmiHanghoa
-            // 
-            this.tsmiHanghoa.Name = "tsmiHanghoa";
-            this.tsmiHanghoa.Size = new System.Drawing.Size(224, 26);
-            this.tsmiHanghoa.Text = "Hàng hóa";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 768);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
->>>>>>> ece1a3e46a73e3ce6e87879e24cc1f4439bb04c7
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-<<<<<<< HEAD
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
-=======
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmiKhachhang;
-        private System.Windows.Forms.ToolStripMenuItem tsmiHanghoa;
-    }
-}
->>>>>>> ece1a3e46a73e3ce6e87879e24cc1f4439bb04c7
+
+    

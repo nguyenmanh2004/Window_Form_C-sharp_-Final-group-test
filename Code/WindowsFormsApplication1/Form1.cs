@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -24,6 +24,24 @@ namespace WindowsFormsApplication1
 
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormKhachHang formKhachHang = new FormKhachHang();
+            formKhachHang.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormHangHoa formHangHoa = new FormHangHoa();
+           formHangHoa.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormNhanVien formNhanVien = new FormNhanVien();
+            formNhanVien.ShowDialog();
         }
     }
 }
