@@ -28,6 +28,7 @@ namespace WindowsFormsApplication1
             dt = new DataTable();
             da = new SqlDataAdapter("SELECT * FROM tblHang", Dungchung.cnn);
             da.Fill(dt);
+
             dgvHang.DataSource = dt;
             dgvHang.Columns[0].HeaderText = "Mã Hàng";
             dgvHang.Columns[1].HeaderText = "Tên Hàng";
