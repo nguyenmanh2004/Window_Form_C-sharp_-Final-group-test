@@ -35,9 +35,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(128, 112);
+            this.button1.Location = new System.Drawing.Point(116, 112);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "khách hàng";
             this.button1.UseVisualStyleBackColor = true;
@@ -45,9 +45,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(239, 222);
+            this.button2.Location = new System.Drawing.Point(229, 229);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(113, 48);
             this.button2.TabIndex = 1;
             this.button2.Text = "Nhân viên";
             this.button2.UseVisualStyleBackColor = true;
@@ -55,9 +55,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(340, 112);
+            this.button3.Location = new System.Drawing.Point(344, 112);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(114, 50);
             this.button3.TabIndex = 2;
             this.button3.Text = "Hàng hoá";
             this.button3.UseVisualStyleBackColor = true;
