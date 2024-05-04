@@ -49,32 +49,36 @@ namespace WindowsFormsApplication1
         {
             if (!string.IsNullOrWhiteSpace(txtmk.Text) && !string.IsNullOrWhiteSpace(txttk.Text))
             {
-                
-
-                
-                try
+                if (txttk.Text == "nhom5" && txtmk.Text == "22ct115")
                 {
-                    // ket noi sql
-                    string connectionstring;
-                    SqlConnection cnn = new SqlConnection();
-                    connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
-                    cnn.ConnectionString = connectionstring;
-                    cnn.Open();
-                    string message = string.Format("Đăng nhập thành công!");
-                    MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    cnn.Close();
-                    FormMain formMain = new FormMain();
-                    formMain.ShowDialog();
+                    try
+                    {
+                        // ket noi sql
+                        string connectionstring;
+                        SqlConnection cnn = new SqlConnection();
+                        connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
+                        cnn.ConnectionString = connectionstring;
+                        cnn.Open();
+                        string message = string.Format("Đăng nhập thành công!");
+                        MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        cnn.Close();
+                        FormMain formMain = new FormMain();
+                        formMain.ShowDialog();
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("loi ke noi" + ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("loi ke noi" + ex.Message);
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tài khoản hoặc mật khẩu không Được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
 

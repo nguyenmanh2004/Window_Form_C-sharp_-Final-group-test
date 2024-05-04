@@ -29,10 +29,7 @@ namespace WindowsFormsApplication1.Class
             string connectionstring;
             try
             {
-                connectionstring = "server=SQL5113.site4now.net";
-                connectionstring += ";database='db_aa8167_nguyenmanh1203'";
-                connectionstring += ";User Id=db_aa8167_nguyenmanh1203_admin";
-                connectionstring += ";Password=phucdeptrai123";
+                connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
                 //connectionstring += ";integrated security=true";
                 Dungchung.cnn.ConnectionString = connectionstring;
                 //Dungchung.cnn.Open();

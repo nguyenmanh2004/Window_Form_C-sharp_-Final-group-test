@@ -51,7 +51,7 @@ namespace WindowsFormsApplication1
 
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
-            Dungchung.KetNoi();
+            Class.Dungchung.KetNoi();
             Datquanhe("MaNhanVien", "TenNhanVien");
             cb = new SqlCommandBuilder(daCon);
             BuocCacDieuKhien();
@@ -72,7 +72,7 @@ namespace WindowsFormsApplication1
             bs.DataSource = ds.Tables["NhanVien"];
             dgvNhanVien.DataSource = bs;
             txtMaNV.DataBindings.Add("Text", ds, "Khuvuc.MaNV");
-            txtTenNV.DataBindings.Add("Text", ds, "Khuvuc.TenNV");
+            //txtTenNV.DataBindings.Add("Text", ds, "Khuvuc.TenNV");
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
