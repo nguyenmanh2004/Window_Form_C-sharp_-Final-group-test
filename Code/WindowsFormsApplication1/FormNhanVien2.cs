@@ -18,23 +18,20 @@ namespace WindowsFormsApplication1
         public FormNhanVien2(BindingSource dataSource)
         {
             InitializeComponent();
-         
-
             formDataSource = dataSource;
             txtMaNV.DataBindings.Clear();
             txtMaNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
             true, DataSourceUpdateMode.OnPropertyChanged);
-
-
+            txtTenNV.DataBindings.Clear();
             txtTenNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
             true, DataSourceUpdateMode.OnPropertyChanged);
-
+            txtNgaySinh.DataBindings.Clear();
             txtNgaySinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
             true, DataSourceUpdateMode.OnPropertyChanged);
-
+            txtGioiTinh.DataBindings.Clear();
             txtGioiTinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
             true, DataSourceUpdateMode.OnPropertyChanged);
-
+            txtDiaChi.DataBindings.Clear();
             txtDiaChi.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
             true, DataSourceUpdateMode.OnPropertyChanged);
         }
@@ -59,6 +56,16 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FormNhanVien2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaNV_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

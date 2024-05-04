@@ -10,7 +10,7 @@ using System.Drawing;
 
 namespace WindowsFormsApplication1.Class
 {
-    public static class Dungchung
+    public  class Dungchung
     {
 
         public static SqlConnection cnn = new SqlConnection();
@@ -26,21 +26,17 @@ namespace WindowsFormsApplication1.Class
         public static SqlCommandBuilder cmb;
         public static void KetNoi()
         {
-            string connectionstring;
             try
             {
-                connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
-                //connectionstring += ";integrated security=true";
+                string connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
                 Dungchung.cnn.ConnectionString = connectionstring;
-                //Dungchung.cnn.Open();
-                //MessageBox.Show("ket noi thanh cong");
+                Dungchung.cnn.Open();
+                MessageBox.Show("Kết nối thành công");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("loi ke noi" + ex.Message);
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
-
-
         }
     }
 }
