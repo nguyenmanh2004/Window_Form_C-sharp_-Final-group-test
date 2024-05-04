@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    
     public partial class FormLogin : Form
     {
         public FormLogin()
@@ -47,15 +49,36 @@ namespace WindowsFormsApplication1
         {
             if (!string.IsNullOrWhiteSpace(txtmk.Text) && !string.IsNullOrWhiteSpace(txttk.Text))
             {
-                string message = string.Format("Đăng nhập thành công!\nTài khoản là: {0}\nMật khẩu là: {1}", txttk.Text, txtmk.Text);
-                MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                if (txttk.Text == "nhom5" && txtmk.Text == "22ct115")
+                {
+                    try
+                    {
+                        // ket noi sql
+                        string connectionstring;
+                        SqlConnection cnn = new SqlConnection();
+                        connectionstring = "Data Source=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123;";
+                        cnn.ConnectionString = connectionstring;
+                        cnn.Open();
+                        string message = string.Format("Đăng nhập thành công!");
+                        MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        cnn.Close();
+                        FormMain formMain = new FormMain();
+                        formMain.ShowDialog();
 
-                Connect_database formConnectDatabase = new Connect_database();
-                formConnectDatabase.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("loi ke noi" + ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tài khoản hoặc mật khẩu không Được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
 
