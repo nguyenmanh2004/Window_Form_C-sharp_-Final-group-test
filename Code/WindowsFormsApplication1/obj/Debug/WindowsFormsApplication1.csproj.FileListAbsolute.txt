@@ -62,3 +62,4 @@ D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\
 D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormNhanVien.resources
 D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormNhanVien2.resources
 >>>>>>> fcb5880e654f741fb33dc1e443e36f94e2f390c0
+D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormSua.resources

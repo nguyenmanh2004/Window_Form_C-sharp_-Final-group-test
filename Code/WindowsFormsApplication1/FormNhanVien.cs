@@ -63,8 +63,8 @@ namespace WindowsFormsApplication1
         private void BuocCacDieuKhien()
         {
             // Gán nguồn dữ liệu cho DataGridView
-            bs.DataSource = ds.Tables["tblNhanVien"];
-            dgvNhanVien.DataSource = bs;
+            bs1.DataSource = ds.Tables["tblNhanVien"];
+            dgvNhanVien.DataSource = bs1;
            //txtMaNV.DataBindings.Add("Text", ds, "tblNhanVien.MaNhanVien");
             //txtTenNV.DataBindings.Add("Text", ds, "Khuvuc.TenNV");
         }
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication1
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FormNhanVien2 Nv = new FormNhanVien2(bs);
+            FormNhanVien2 Nv = new FormNhanVien2(bs1);
             Nv.Show();
         }
 
@@ -98,6 +98,11 @@ namespace WindowsFormsApplication1
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

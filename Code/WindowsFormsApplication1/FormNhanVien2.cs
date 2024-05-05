@@ -19,21 +19,21 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             formDataSource = dataSource;
+
             txtMaNV.DataBindings.Clear();
-            txtMaNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
-            true, DataSourceUpdateMode.OnPropertyChanged);
-            txtTenNV.DataBindings.Clear();
-            txtTenNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
-            true, DataSourceUpdateMode.OnPropertyChanged);
-            txtNgaySinh.DataBindings.Clear();
-            txtNgaySinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
-            true, DataSourceUpdateMode.OnPropertyChanged);
-            txtGioiTinh.DataBindings.Clear();
-            txtGioiTinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
-            true, DataSourceUpdateMode.OnPropertyChanged);
-            txtDiaChi.DataBindings.Clear();
-            txtDiaChi.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns[0].ColumnName,
-            true, DataSourceUpdateMode.OnPropertyChanged);
+            txtMaNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns["MaNhanVien"].ColumnName, true, DataSourceUpdateMode.OnPropertyChanged);
+
+            
+            txtTenNV.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns["TenNhanVien"].ColumnName, true, DataSourceUpdateMode.OnPropertyChanged);
+
+            
+            txtNgaySinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns["NgaySinh"].ColumnName, true, DataSourceUpdateMode.OnPropertyChanged);
+
+         
+            txtGioiTinh.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns["GioiTinh"].ColumnName, true, DataSourceUpdateMode.OnPropertyChanged);
+
+            
+            txtDiaChi.DataBindings.Add("Text", formDataSource, Dungchung.dt.Columns["DiaChi"].ColumnName, true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
