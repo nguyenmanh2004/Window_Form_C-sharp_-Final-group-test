@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml;
 using WindowsFormsApplication1.Class;
+using System.IO;
+
 namespace WindowsFormsApplication1
 {
     public partial class FormHangHoa : Form
@@ -61,6 +63,7 @@ namespace WindowsFormsApplication1
 
         private void btnDong_Click(object sender, EventArgs e)
         {
+            Dungchung.cnn.Close();
             Close();
         }
 
@@ -165,6 +168,71 @@ namespace WindowsFormsApplication1
                 suaForm.ShowDialog();
             }
         }
-        
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
+                saveFileDialog.Title = "Save Data";
+                saveFileDialog.FileName = "du_lieu.txt";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                    {
+                        // Ghi hàng tiêu đề
+                        for (int i = 0; i < dgvHang.Columns.Count; i++)
+                        {
+                            string header = dgvHang.Columns[i].HeaderText;
+                            writer.Write(header.PadRight(10)); // Độ rộng cột là 30 ký tự
+
+                            // Phân tách các cột bằng tab trừ cột cuối cùng
+                            if (i < dgvHang.Columns.Count - 1)
+                            {
+                                writer.Write("\t\t"); // Tăng khoảng cách giữa các cột
+                            }
+                        }
+
+                        writer.WriteLine(); // Xuống dòng sau hàng tiêu đề
+
+                        // Ghi dữ liệu từ DataGridView
+                        foreach (DataGridViewRow row in dgvHang.Rows)
+                        {
+                            for (int i = 0; i < dgvHang.Columns.Count; i++)
+                            {
+                                string cellValue = row.Cells[i].Value?.ToString() ?? string.Empty;
+                                writer.Write(cellValue.PadRight(10)); // Độ rộng cột là 30 ký tự
+
+                                // Phân tách các cột bằng tab trừ cột cuối cùng
+                                if (i < dgvHang.Columns.Count - 1)
+                                {
+                                    writer.Write("\t\t"); // Tăng khoảng cách giữa các cột
+                                }
+                            }
+
+                            writer.WriteLine(); // Xuống dòng sau mỗi hàng
+                        }
+                    }
+
+                    MessageBox.Show("Dữ liệu đã được lưu vào file " + saveFileDialog.FileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+            }
+        }
     }
 }

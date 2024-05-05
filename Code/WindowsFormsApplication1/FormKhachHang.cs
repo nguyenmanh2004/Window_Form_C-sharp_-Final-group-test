@@ -30,9 +30,9 @@ namespace WindowsFormsApplication1
             btnLuu.Enabled = false;
           
             LoadDataGridView();
-            KetNoi();
+            //KetNoi();
             Loaddata();
-            Dong_TextBox(); 
+            //Dong_TextBox(); 
         }
         private void LoadDataGridView()
         {
@@ -70,25 +70,25 @@ namespace WindowsFormsApplication1
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "select * from tblKhach";
                 cmd.CommandTimeout = 60;
-                cmd.Connection = cnn;
+               // cmd.Connection = cnn;
                 SqlDataReader rs;
                 rs = cmd.ExecuteReader();
-                dgvKhachHang.Items.Clear();
+                //dgvKhachHang.Items.Clear();
                 while (rs.Read())
                 {
                     ListViewItem item = new ListViewItem(rs.GetValue(0).ToString());
                     item.SubItems.Add(rs.GetValue(1).ToString());
                     item.SubItems.Add(rs.GetValue(2).ToString());
                     item.SubItems.Add(rs.GetValue(3).ToString());
-                    LVData.Items.Add(item);
+                    //LVData.Items.Add(item);
                 }
                 rs.Close();
 
-                ListViewItem item2 = LVData.Items[0];
-                FrmKhachHang.Text = item2.SubItems[0].Text;
-                TxtTenKH.Text = item2.SubItems[1].Text;
-                TxtDiachi.Text = item2.SubItems[2].Text;
-                TxtSoDT.Text = item2.SubItems[3].Text;
+                //ListViewItem item2 = LVData.Items[0];
+                //FrmKhachHang.Text = item2.SubItems[0].Text;
+                //TxtTenKH.Text = item2.SubItems[1].Text;
+                //TxtDiachi.Text = item2.SubItems[2].Text;
+                //TxtSoDT.Text = item2.SubItems[3].Text;
             }
             catch (Exception)
             {

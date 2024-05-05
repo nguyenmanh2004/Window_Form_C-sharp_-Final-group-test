@@ -207,6 +207,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5628e7fb5169cb5789c5ade76cb2e13a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e438d30af4ecc2d47ccdcaeb0cef85f6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\325.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
