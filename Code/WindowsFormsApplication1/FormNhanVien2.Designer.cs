@@ -99,6 +99,7 @@
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(171, 22);
             this.txtMaNV.TabIndex = 5;
+            this.txtMaNV.TextChanged += new System.EventHandler(this.txtMaNV_TextChanged);
             // 
             // txtTenNV
             // 
@@ -169,6 +170,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormNhanVien2";
             this.Text = "FormNhanVien2";
+            this.Load += new System.EventHandler(this.FormNhanVien2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
