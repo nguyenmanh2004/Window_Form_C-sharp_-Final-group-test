@@ -61,12 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Dungchung.cs" />
-    <Compile Include="Connect database.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Connect database.Designer.cs">
-      <DependentUpon>Connect database.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +103,14 @@
     <Compile Include="FormNhanVien2.Designer.cs">
       <DependentUpon>FormNhanVien2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSua.Designer.cs">
+      <DependentUpon>FormSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Connect database.resx">
-      <DependentUpon>Connect database.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -135,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNhanVien2.resx">
       <DependentUpon>FormNhanVien2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSua.resx">
+      <DependentUpon>FormSua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

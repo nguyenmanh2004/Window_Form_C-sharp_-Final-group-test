@@ -16,12 +16,12 @@ namespace WindowsFormsApplication1.Class
         public static SqlConnection cnn = new SqlConnection();
         public static SqlDataAdapter da;
         public static DataTable dt = new DataTable();
-        public static SqlDataAdapter daKhachHang;
-        public static DataTable dtKhachHang = new DataTable();
-        public static SqlDataAdapter daNhanvien;
-        public static DataTable dtNhanvien = new DataTable();
-        public static SqlDataAdapter daHang;
-        public static DataTable dtHang = new DataTable();
+        //public static SqlDataAdapter daKhachHang;
+        //public static DataTable dtKhachHang = new DataTable();
+        //public static SqlDataAdapter daNhanvien;
+        //public static DataTable dtNhanvien = new DataTable();
+        //public static SqlDataAdapter daHang;
+        //public static DataTable dtHang = new DataTable();
         public static SqlCommand cmd;
         public static SqlCommandBuilder cmb;
         public static void KetNoi()

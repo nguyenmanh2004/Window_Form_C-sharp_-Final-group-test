@@ -27,7 +27,6 @@ C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-t
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
-C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connect_database.resources
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormBackground.resources
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormLogin.resources
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
@@ -54,3 +53,5 @@ C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-t
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormHangHoa.resources
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormKhachHang.resources
 C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormNhanVien.resources
+C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormNhanVien2.resources
+C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormSua.resources
