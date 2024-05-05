@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Xml;
 namespace WindowsFormsApplication1
 {
     public partial class FormKhachHang : Form
@@ -30,6 +30,9 @@ namespace WindowsFormsApplication1
             btnLuu.Enabled = false;
           
             LoadDataGridView();
+            KetNoi();
+            Loaddata();
+            Dong_TextBox(); 
         }
         private void LoadDataGridView()
         {
@@ -59,5 +62,39 @@ namespace WindowsFormsApplication1
             dgvKhachHang.AllowUserToAddRows = false;
             dgvKhachHang.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
+        private void Loaddata()
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from tblKhach";
+                cmd.CommandTimeout = 60;
+                cmd.Connection = cnn;
+                SqlDataReader rs;
+                rs = cmd.ExecuteReader();
+                dgvKhachHang.Items.Clear();
+                while (rs.Read())
+                {
+                    ListViewItem item = new ListViewItem(rs.GetValue(0).ToString());
+                    item.SubItems.Add(rs.GetValue(1).ToString());
+                    item.SubItems.Add(rs.GetValue(2).ToString());
+                    item.SubItems.Add(rs.GetValue(3).ToString());
+                    LVData.Items.Add(item);
+                }
+                rs.Close();
+
+                ListViewItem item2 = LVData.Items[0];
+                FrmKhachHang.Text = item2.SubItems[0].Text;
+                TxtTenKH.Text = item2.SubItems[1].Text;
+                TxtDiachi.Text = item2.SubItems[2].Text;
+                TxtSoDT.Text = item2.SubItems[3].Text;
+            }
+            catch (Exception)
+            {
+
+            }
+        } 
+
     }
 }
