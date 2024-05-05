@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\windowsformsapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|solutionrelative:windowsformsapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|c:\\users\\phuc tran\\documents\\b\u00E0i window form\\window_form_c-sharp_-final-group-test\\code\\windowsformsapplication1\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|solutionrelative:windowsformsapplication1\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|c:\\users\\phuc tran\\documents\\b\u00E0i window form\\window_form_c-sharp_-final-group-test\\code\\windowsformsapplication1\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\windowsformsapplication1\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|solutionrelative:windowsformsapplication1\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\windowsformsapplication1\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|solutionrelative:windowsformsapplication1\\formhanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\windowsformsapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|solutionrelative:windowsformsapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE37C8C6-59AF-4645-9428-918FEAA80125}|WindowsFormsApplication1\\WindowsFormsApplication1.csproj|C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\windowsformsapplication1\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\WindowsFormsApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\Program.cs",
@@ -70,8 +70,7 @@
               "RelativeToolTip": "WindowsFormsApplication1\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:37:50.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T09:37:50.793Z"
             },
             {
               "$type": "Document",
@@ -104,7 +103,7 @@
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormNhanVien.cs",
               "ToolTip": "C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\WindowsFormsApplication1\\FormNhanVien.cs",
               "RelativeToolTip": "WindowsFormsApplication1\\FormNhanVien.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAA3wBUAAAAXAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAkwBUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T09:29:18.701Z",
               "EditorCaption": ""
@@ -123,15 +122,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormHangHoa.cs",
               "DocumentMoniker": "C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\WindowsFormsApplication1\\FormHangHoa.cs",
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormHangHoa.cs",
               "ToolTip": "C:\\Users\\Phuc Tran\\Documents\\B\u00E0i Window Form\\Window_Form_C-sharp_-Final-group-test\\Code\\WindowsFormsApplication1\\FormHangHoa.cs",
               "RelativeToolTip": "WindowsFormsApplication1\\FormHangHoa.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAkwGMAAABNAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwv0wAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T04:51:10.991Z"
+              "WhenOpened": "2024-05-03T04:51:10.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

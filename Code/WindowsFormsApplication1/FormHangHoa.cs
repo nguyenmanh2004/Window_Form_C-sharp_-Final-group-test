@@ -74,17 +74,21 @@ namespace WindowsFormsApplication1
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SqlCommandBuilder cb = new SqlCommandBuilder(Dungchung.da);
-                Dungchung.da.Update(Dungchung.dt);
-                MessageBox.Show("Lưu thành công!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
             
+            DataTable tbl = new DataTable();
+            tbl = Dungchung.dt.GetChanges();
+            //Nếu có sự thay đổi sẽ phát sinh các lệnh cập nhật
+            if (tbl == null)
+                MessageBox.Show("Dữ liệu chưa thay đổi");
+            else
+            {
+                Dungchung.cmb = new SqlCommandBuilder(Dungchung.da);
+                //Dungchung.cmb = new SqlCommandBuilder(Dungchung.da);
+                Dungchung.da.Update(Dungchung.dt);
+                MessageBox.Show("Có " + tbl.Rows.Count +
+               " dòng đã được cập nhật");
+            }
+
         }
 
         private void btnTimkiem_Click(object sender, EventArgs e)
