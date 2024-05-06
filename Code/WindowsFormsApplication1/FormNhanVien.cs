@@ -46,27 +46,28 @@ namespace WindowsFormsApplication1
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
             Dungchung.KetNoi();
-            Datquanhe( "MaNhanVien");
-           
+            Datquanhe("tblNhanVien","tblKhuVuc");
+            cb = new SqlCommandBuilder(daCon);
             BuocCacDieuKhien();
-           
+
         }
-        private void Datquanhe( string bangphu)
+        private void Datquanhe(string bangchinh, string bangphu)
         {
-            cmdCha = new SqlCommand("select * from tblNhanVien" , cnn);
+            cmdCha = new SqlCommand("select * from " + bangchinh, cnn);
             daCha = new SqlDataAdapter(cmdCha);
-            
+            cmdCon = new SqlCommand("select * from " + bangphu, cnn);
+            daCon = new SqlDataAdapter(cmdCon);
             ds = new DataSet();
-            daCha.Fill(ds, "tblNhanVien");
-            
+            daCha.Fill(ds, bangchinh);
+            daCon.Fill(ds, bangphu);
+
         }
         private void BuocCacDieuKhien()
-        {
-            // Gán nguồn dữ liệu cho DataGridView
-            bs1.DataSource = ds.Tables["tblNhanVien"];
-            dgvNhanVien.DataSource = bs1;
-           //txtMaNV.DataBindings.Add("Text", ds, "tblNhanVien.MaNhanVien");
-            //txtTenNV.DataBindings.Add("Text", ds, "Khuvuc.TenNV");
+        { // Gán nguồn dữ liệu cho DataGridView
+            bs.DataSource = ds.Tables["tblNhanVien"];
+            dgvNhanVien.DataSource = bs;
+           // txtMaNV.DataBindings.Add("Text", ds, "tblNhanVien.MaNhanVien");
+           // txtMaKV.DataBindings.Add("Text", ds, "tblNhanVien.MaKV");
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -86,13 +87,12 @@ namespace WindowsFormsApplication1
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FormNhanVien2 Nv = new FormNhanVien2(bs1);
-            Nv.Show();
+           
         }
 
         private void txtMaNV_TextChanged(object sender, EventArgs e)
         {
-            ds.Tables[1].DefaultView.RowFilter = "MaNhanVien='" + txtMaNV.Text + "'";
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -103,6 +103,62 @@ namespace WindowsFormsApplication1
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txtMaKV_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(txtMaNV.Text) && string.IsNullOrEmpty(txtMaKV.Text))
+            {
+                ds.Tables[0].DefaultView.RowFilter = "MaNhanVien='" + txtMaNV.Text + "'";
+            }
+            else if (string.IsNullOrEmpty(txtMaNV.Text) && !string.IsNullOrEmpty(txtMaKV.Text))
+            {
+                int maKV;
+                if (int.TryParse(txtMaKV.Text, out maKV))
+                {
+                    ds.Tables[0].DefaultView.RowFilter = "MaKV=" + maKV;
+                }
+               
+            }
+            else if (string.IsNullOrEmpty(txtMaNV.Text) && string.IsNullOrEmpty(txtMaKV.Text))
+            {
+                // Hiển thị toàn bộ bảng
+                ds.Tables[0].DefaultView.RowFilter = "";
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dgvNhanVien.SelectedRows.Count > 0)
+            {
+                dgvNhanVien.Rows.Remove(dgvNhanVien.SelectedRows[0]);
+            }
         }
     }
 }

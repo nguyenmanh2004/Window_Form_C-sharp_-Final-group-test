@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsFormsApplication1</RootNamespace>
     <AssemblyName>WindowsFormsApplication1</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
@@ -103,12 +103,6 @@
     <Compile Include="FormNhanVien.Designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhanVien2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNhanVien2.Designer.cs">
-      <DependentUpon>FormNhanVien2.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormSua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,9 +132,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNhanVien2.resx">
-      <DependentUpon>FormNhanVien2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSua.resx">
       <DependentUpon>FormSua.cs</DependentUpon>
