@@ -44,87 +44,107 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.a = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 27);
+            this.label1.Location = new System.Drawing.Point(33, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Khách Hàng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 75);
+            this.label2.Location = new System.Drawing.Point(33, 61);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 17);
+            this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Khách Hàng";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 123);
+            this.label3.Location = new System.Drawing.Point(33, 100);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Địa Chỉ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 169);
+            this.label4.Location = new System.Drawing.Point(33, 137);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 17);
+            this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Số Điện Thoại";
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(178, 22);
+            this.txtMaKH.Location = new System.Drawing.Point(134, 18);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(554, 22);
+            this.txtMaKH.Size = new System.Drawing.Size(416, 20);
             this.txtMaKH.TabIndex = 4;
             // 
             // txtTenKH
             // 
-            this.txtTenKH.Location = new System.Drawing.Point(178, 72);
+            this.txtTenKH.Location = new System.Drawing.Point(134, 58);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(554, 22);
+            this.txtTenKH.Size = new System.Drawing.Size(416, 20);
             this.txtTenKH.TabIndex = 5;
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(178, 120);
+            this.txtDiachi.Location = new System.Drawing.Point(134, 98);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(554, 22);
+            this.txtDiachi.Size = new System.Drawing.Size(416, 20);
             this.txtDiachi.TabIndex = 6;
             // 
             // txtSoDT
             // 
-            this.txtSoDT.Location = new System.Drawing.Point(178, 164);
+            this.txtSoDT.Location = new System.Drawing.Point(134, 133);
+            this.txtSoDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSoDT.Name = "txtSoDT";
-            this.txtSoDT.Size = new System.Drawing.Size(554, 22);
+            this.txtSoDT.Size = new System.Drawing.Size(416, 20);
             this.txtSoDT.TabIndex = 7;
             // 
             // LVData
             // 
-            this.LVData.Location = new System.Drawing.Point(47, 210);
+            this.LVData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.a});
+            this.LVData.HideSelection = false;
+            this.LVData.Location = new System.Drawing.Point(35, 171);
+            this.LVData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LVData.Name = "LVData";
-            this.LVData.Size = new System.Drawing.Size(659, 303);
+            this.LVData.Size = new System.Drawing.Size(495, 247);
             this.LVData.TabIndex = 8;
             this.LVData.UseCompatibleStateImageBehavior = false;
-            this.LVData.View = System.Windows.Forms.View.List;
+            this.LVData.View = System.Windows.Forms.View.Details;
             this.LVData.SelectedIndexChanged += new System.EventHandler(this.LVData_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(47, 544);
+            this.button1.Location = new System.Drawing.Point(35, 442);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 9;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
@@ -132,9 +152,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(152, 544);
+            this.button2.Location = new System.Drawing.Point(114, 442);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 10;
             this.button2.Text = "Load Data";
             this.button2.UseVisualStyleBackColor = true;
@@ -142,9 +163,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(253, 544);
+            this.button3.Location = new System.Drawing.Point(190, 442);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(56, 19);
             this.button3.TabIndex = 11;
             this.button3.Text = "Xem";
             this.button3.UseVisualStyleBackColor = true;
@@ -152,9 +174,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(351, 544);
+            this.button4.Location = new System.Drawing.Point(263, 442);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(56, 19);
             this.button4.TabIndex = 12;
             this.button4.Text = "Lưu";
             this.button4.UseVisualStyleBackColor = true;
@@ -162,9 +185,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(446, 544);
+            this.button5.Location = new System.Drawing.Point(334, 442);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(56, 19);
             this.button5.TabIndex = 13;
             this.button5.Text = "Thêm";
             this.button5.UseVisualStyleBackColor = true;
@@ -172,9 +196,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(539, 544);
+            this.button6.Location = new System.Drawing.Point(404, 442);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(56, 19);
             this.button6.TabIndex = 14;
             this.button6.Text = "Sửa";
             this.button6.UseVisualStyleBackColor = true;
@@ -182,19 +207,40 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(631, 544);
+            this.button7.Location = new System.Drawing.Point(473, 442);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(56, 19);
             this.button7.TabIndex = 15;
             this.button7.Text = "Xóa";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã Khách Hàng";
+            this.columnHeader1.Width = 97;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tên Khách hàng";
+            this.columnHeader2.Width = 135;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Địa chỉ";
+            this.columnHeader3.Width = 151;
+            // 
+            // a
+            // 
+            this.a.Text = "Số ĐT";
+            this.a.Width = 146;
+            // 
             // FrmKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 623);
+            this.ClientSize = new System.Drawing.Size(627, 506);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -211,6 +257,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmKhachHang";
             this.Text = "FormKhachHang1";
             this.Load += new System.EventHandler(this.FrmKhachHang_Load);
@@ -238,5 +285,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader a;
     }
 }
