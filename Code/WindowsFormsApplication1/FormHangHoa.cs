@@ -196,7 +196,7 @@ namespace WindowsFormsApplication1
                         for (int i = 0; i < dgvHang.Columns.Count; i++)
                         {
                             string header = dgvHang.Columns[i].HeaderText;
-                            writer.Write(header.PadRight(10)); // Độ rộng cột là 30 ký tự
+                            writer.Write(header.PadRight(15)); // Độ rộng cột là 30 ký tự
 
                             // Phân tách các cột bằng tab trừ cột cuối cùng
                             if (i < dgvHang.Columns.Count - 1)
@@ -212,8 +212,10 @@ namespace WindowsFormsApplication1
                         {
                             for (int i = 0; i < dgvHang.Columns.Count; i++)
                             {
-                                string cellValue = row.Cells[i].Value?.ToString() ?? string.Empty;
-                                writer.Write(cellValue.PadRight(10)); // Độ rộng cột là 30 ký tự
+                                string cellValue = row.Cells[i].Value != null ? row.Cells[i].Value.ToString() : null;
+
+
+                                writer.Write(cellValue.PadRight(15)); // Độ rộng cột là 30 ký tự
 
                                 // Phân tách các cột bằng tab trừ cột cuối cùng
                                 if (i < dgvHang.Columns.Count - 1)

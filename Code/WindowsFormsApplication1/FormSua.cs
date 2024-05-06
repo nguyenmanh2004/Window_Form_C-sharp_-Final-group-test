@@ -10,9 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    public delegate void CapNhatThongTinHandler(string maHangHoa, string tenHangHoa, string tenChatLieu, string soLuong, string donGiaNhap, string donGiaBan, string ghiChu);
     public partial class FormSua : Form
     {
-        public event Action<string, string, string, string, string, string, string> CapNhatThongTin;
+        //public event Action<string, string, string, string, string, string, string> CapNhatThongTin;
+        public event CapNhatThongTinHandler CapNhatThongTin;
         public FormSua(string maHangHoa, string tenHangHoa, string tenChatLieu, string soLuong, string donGiaNhap, string donGiaBan, string ghiChu)
         {
             InitializeComponent();
@@ -42,8 +44,11 @@ namespace WindowsFormsApplication1
             string updatedGhichu = txtGhichu.Text;
 
             // Gọi sự kiện CapNhatThongTin để truyền dữ liệu đã chỉnh sửa về MainForm
-            CapNhatThongTin?.Invoke(updatedMahang, updatedTenhang, updatedTenchatlieu, updatedSoluong, updatedDongianhap, updatedDongiaban, updatedGhichu);
-            MessageBox.Show("Cập nhật thành công!");
+            if (CapNhatThongTin != null)
+            {
+                CapNhatThongTin(updatedMahang, updatedTenhang, updatedTenchatlieu, updatedSoluong, updatedDongianhap, updatedDongiaban, updatedGhichu);
+                MessageBox.Show("Cập nhật thành công!");
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

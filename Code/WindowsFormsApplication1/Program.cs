@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Application.Run(new FormNhanVien());
-            Application.Run(new FormBackground());
+            Application.Run(new FormHangHoa());
             //Application.Run(new FormNhanVien());
 
         }
