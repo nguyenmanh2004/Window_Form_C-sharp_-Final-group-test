@@ -97,6 +97,7 @@ namespace WindowsFormsApplication1
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            Dungchung.cnn.Close();
             Close();
         }
 
