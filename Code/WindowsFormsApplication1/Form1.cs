@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormKhachHang formKhachHang = new FormKhachHang();
+            FrmKhachHang formKhachHang = new FrmKhachHang();
             formKhachHang.ShowDialog();
         }
 
@@ -69,7 +69,7 @@ namespace WindowsFormsApplication1
         private void timer1_Tick(object sender, EventArgs e)
         {
             x++;
-            if (x == 5)
+            if (x == 3)
             {
                 pictureBox1.Show();
                 label1.Show();

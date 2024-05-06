@@ -63,7 +63,7 @@
             // 
             this.dgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.Location = new System.Drawing.Point(12, 106);
+            this.dgvNhanVien.Location = new System.Drawing.Point(37, 155);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.Size = new System.Drawing.Size(767, 257);
             this.dgvNhanVien.TabIndex = 0;
@@ -73,20 +73,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(545, 38);
+            this.label1.Location = new System.Drawing.Point(340, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 29);
+            this.label1.Size = new System.Drawing.Size(366, 29);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Danh sách nhân viên ";
+            this.label1.Text = "Danh sách nhân viên bán hàng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 46);
+            this.label2.Location = new System.Drawing.Point(48, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 21);
             this.label2.TabIndex = 5;
@@ -95,7 +95,7 @@
             // txtMaNV
             // 
             this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.Location = new System.Drawing.Point(133, 46);
+            this.txtMaNV.Location = new System.Drawing.Point(158, 95);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(195, 22);
             this.txtMaNV.TabIndex = 6;
@@ -105,11 +105,11 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(265, 379);
+            this.btnExit.Location = new System.Drawing.Point(702, 428);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(102, 29);
             this.btnExit.TabIndex = 12;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "Đóng";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(27, 379);
+            this.btnLuu.Location = new System.Drawing.Point(37, 428);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(105, 29);
             this.btnLuu.TabIndex = 13;
@@ -154,7 +154,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(808, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1086, 25);
             this.bindingNavigator1.TabIndex = 21;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -170,7 +170,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -248,7 +248,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(147, 379);
+            this.button1.Location = new System.Drawing.Point(184, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 29);
             this.button1.TabIndex = 22;
@@ -258,11 +258,11 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.LightGray;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(334, 71);
+            this.button2.Location = new System.Drawing.Point(383, 95);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 29);
+            this.button2.Size = new System.Drawing.Size(128, 52);
             this.button2.TabIndex = 23;
             this.button2.Text = "Tìm kiếm";
             this.button2.UseVisualStyleBackColor = false;
@@ -271,7 +271,7 @@
             // txtMaKV
             // 
             this.txtMaKV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKV.Location = new System.Drawing.Point(133, 76);
+            this.txtMaKV.Location = new System.Drawing.Point(158, 125);
             this.txtMaKV.Name = "txtMaKV";
             this.txtMaKV.Size = new System.Drawing.Size(195, 22);
             this.txtMaKV.TabIndex = 24;
@@ -282,7 +282,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 77);
+            this.label3.Location = new System.Drawing.Point(62, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 21);
             this.label3.TabIndex = 25;
@@ -294,7 +294,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.ae21fbf83a64943acd75;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(808, 425);
+            this.ClientSize = new System.Drawing.Size(1086, 518);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMaKV);
             this.Controls.Add(this.button2);
