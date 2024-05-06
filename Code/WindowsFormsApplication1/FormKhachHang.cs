@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Xml; 
+using System.Xml;
+using System.Data.SqlTypes;
 
 namespace WindowsFormsApplication1
 {
@@ -35,9 +36,9 @@ namespace WindowsFormsApplication1
                 connectionstring = "server=SQL5113.site4now.net,1433;Initial Catalog=db_aa8167_nguyenmanh1203;User Id=db_aa8167_nguyenmanh1203_admin;Password=phucdeptrai123; "; 
                 cnn.ConnectionString = connectionstring; 
  
-                cnn.Open(); 
-              //  MessageBox.Show("ket noi thanh cong"); 
- 
+                cnn.Open();
+                MessageBox.Show("ket noi thanh cong");
+
             } 
             catch (Exception ex) 
             { 
@@ -93,7 +94,7 @@ namespace WindowsFormsApplication1
                 cmd.Connection = cnn; 
                 cmd.CommandType = CommandType.Text; 
                 cmd.CommandText = s; 
-                cmd.Parameters.Add("@makh", SqlDbType.Float).Value = float.Parse(txtMaKH.Text); 
+                cmd.Parameters.Add("@makh", SqlDbType.NVarChar).Value = txtMaKH.Text; 
                 cmd.Parameters.Add("@tenkh", SqlDbType.NVarChar).Value = txtTenKH.Text; 
                 cmd.Parameters.Add("@dckh", SqlDbType.NVarChar).Value = txtDiachi.Text; 
                 cmd.Parameters.Add("@dtkh", SqlDbType.NVarChar).Value = txtSoDT.Text; 
@@ -143,7 +144,7 @@ namespace WindowsFormsApplication1
                 cmd.Connection = cnn; 
                 cmd.CommandType = CommandType.Text; 
                 cmd.CommandText = s; 
-                cmd.Parameters.Add("@makh", SqlDbType.Float).Value = float.Parse(txtMaKH.Text); 
+                cmd.Parameters.Add("@makh", SqlDbType.NVarChar).Value = txtMaKH.Text; 
                 cmd.CommandTimeout = 60; 
                 cmd.ExecuteNonQuery(); 
                 MessageBox.Show("xóa dữ liệu thành công "); 
@@ -216,21 +217,7 @@ namespace WindowsFormsApplication1
             rs.Close(); 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (TrangThai == 1)
-            {
-                Them();
-                Dong_TextBox();
-            }
-            else if (TrangThai == 2)
-            {
-                Sua();
-                Dong_TextBox();
-            }
-            else
-                MessageBox.Show("Chưa thêm và chưa sửa"); 
-        }
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -269,8 +256,22 @@ namespace WindowsFormsApplication1
                 txtDiachi.Text = item.SubItems[2].Text;
                 txtSoDT.Text = item.SubItems[3].Text;
             }
-        } 
+        }
 
-
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (TrangThai == 1)
+            {
+                Them();
+                Dong_TextBox();
+            }
+            else if (TrangThai == 2)
+            {
+                Sua();
+                Dong_TextBox();
+            }
+            else
+                MessageBox.Show("Chưa thêm và chưa sửa");
+        }
     }
 }
