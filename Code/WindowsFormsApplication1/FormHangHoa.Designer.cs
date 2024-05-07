@@ -78,7 +78,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 528);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 81);
+            this.panel1.Size = new System.Drawing.Size(908, 81);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -108,13 +108,15 @@
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(851, 24);
+            this.btnDong.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.Location = new System.Drawing.Point(801, 13);
             this.btnDong.Margin = new System.Windows.Forms.Padding(2);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(94, 35);
             this.btnDong.TabIndex = 9;
             this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.UseVisualStyleBackColor = false;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnLuu
@@ -178,7 +180,7 @@
             this.dgvHang.Name = "dgvHang";
             this.dgvHang.RowHeadersWidth = 51;
             this.dgvHang.RowTemplate.Height = 24;
-            this.dgvHang.Size = new System.Drawing.Size(839, 238);
+            this.dgvHang.Size = new System.Drawing.Size(908, 238);
             this.dgvHang.TabIndex = 2;
             this.dgvHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHang_CellContentClick);
             // 
@@ -207,7 +209,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(839, 290);
+            this.panel2.Size = new System.Drawing.Size(908, 290);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -401,7 +403,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 609);
+            this.ClientSize = new System.Drawing.Size(908, 609);
             this.Controls.Add(this.dgvHang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

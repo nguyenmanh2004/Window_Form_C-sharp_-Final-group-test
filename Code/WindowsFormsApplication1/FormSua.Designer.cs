@@ -247,7 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.ae21fbf83a64943acd75;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(403, 429);
+            this.ClientSize = new System.Drawing.Size(400, 429);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnCapnhat);
