@@ -50,7 +50,7 @@
             // txtMahang
             // 
             this.txtMahang.Location = new System.Drawing.Point(121, 55);
-            this.txtMahang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMahang.Margin = new System.Windows.Forms.Padding(2);
             this.txtMahang.Multiline = true;
             this.txtMahang.Name = "txtMahang";
             this.txtMahang.Size = new System.Drawing.Size(178, 24);
@@ -59,7 +59,7 @@
             // txtTenchatlieu
             // 
             this.txtTenchatlieu.Location = new System.Drawing.Point(121, 133);
-            this.txtTenchatlieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenchatlieu.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenchatlieu.Multiline = true;
             this.txtTenchatlieu.Name = "txtTenchatlieu";
             this.txtTenchatlieu.Size = new System.Drawing.Size(178, 24);
@@ -68,7 +68,7 @@
             // txtDongiaban
             // 
             this.txtDongiaban.Location = new System.Drawing.Point(121, 250);
-            this.txtDongiaban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDongiaban.Margin = new System.Windows.Forms.Padding(2);
             this.txtDongiaban.Multiline = true;
             this.txtDongiaban.Name = "txtDongiaban";
             this.txtDongiaban.Size = new System.Drawing.Size(178, 24);
@@ -77,7 +77,7 @@
             // txtDongianhap
             // 
             this.txtDongianhap.Location = new System.Drawing.Point(121, 212);
-            this.txtDongianhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDongianhap.Margin = new System.Windows.Forms.Padding(2);
             this.txtDongianhap.Multiline = true;
             this.txtDongianhap.Name = "txtDongianhap";
             this.txtDongianhap.Size = new System.Drawing.Size(178, 24);
@@ -86,7 +86,7 @@
             // txtSoluong
             // 
             this.txtSoluong.Location = new System.Drawing.Point(121, 173);
-            this.txtSoluong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoluong.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoluong.Multiline = true;
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(178, 24);
@@ -95,7 +95,7 @@
             // txtTenhang
             // 
             this.txtTenhang.Location = new System.Drawing.Point(121, 94);
-            this.txtTenhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenhang.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenhang.Multiline = true;
             this.txtTenhang.Name = "txtTenhang";
             this.txtTenhang.Size = new System.Drawing.Size(178, 24);
@@ -188,7 +188,7 @@
             // txtGhichu
             // 
             this.txtGhichu.Location = new System.Drawing.Point(121, 298);
-            this.txtGhichu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGhichu.Margin = new System.Windows.Forms.Padding(2);
             this.txtGhichu.Multiline = true;
             this.txtGhichu.Name = "txtGhichu";
             this.txtGhichu.Size = new System.Drawing.Size(178, 24);
@@ -196,8 +196,8 @@
             // 
             // btnCapnhat
             // 
-            this.btnCapnhat.Location = new System.Drawing.Point(332, 362);
-            this.btnCapnhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCapnhat.Location = new System.Drawing.Point(121, 350);
+            this.btnCapnhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapnhat.Name = "btnCapnhat";
             this.btnCapnhat.Size = new System.Drawing.Size(70, 37);
             this.btnCapnhat.TabIndex = 32;
@@ -207,8 +207,8 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(453, 362);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Location = new System.Drawing.Point(216, 350);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(70, 37);
             this.btnThoat.TabIndex = 33;
@@ -219,10 +219,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(425, 13);
+            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(212, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 27);
+            this.label8.Size = new System.Drawing.Size(179, 23);
             this.label8.TabIndex = 34;
             this.label8.Text = "Danh mục hàng hóa";
             // 
@@ -232,7 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.ae21fbf83a64943acd75;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1005, 448);
+            this.ClientSize = new System.Drawing.Size(435, 449);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnCapnhat);
@@ -251,7 +253,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormSua";
             this.Text = "FormHangHoa2";
             this.Load += new System.EventHandler(this.FormSua_Load);
