@@ -83,7 +83,6 @@ namespace WindowsFormsApplication1
             else
             {
                 Dungchung.cmb = new SqlCommandBuilder(Dungchung.da);
-                //Dungchung.cmb = new SqlCommandBuilder(Dungchung.da);
                 Dungchung.da.Update(Dungchung.dt);
                 MessageBox.Show("Có " + tbl.Rows.Count +
                " dòng đã được cập nhật");
@@ -132,7 +131,6 @@ namespace WindowsFormsApplication1
                 string donGiaNhap = selectedRow.Cells["Dongianhap"].Value.ToString();
                 string donGiaBan = selectedRow.Cells["Dongiaban"].Value.ToString();
                 string ghiChu = selectedRow.Cells["Ghichu"].Value.ToString();
-                // Lấy các thông tin khác nếu cần
 
                 // Tạo một instance của form chỉnh sửa và truyền dữ liệu
                 FormSua suaForm = new FormSua(maHangHoa, tenHangHoa, tenChatLieu, soLuong, donGiaNhap, donGiaBan, ghiChu);
@@ -148,7 +146,6 @@ namespace WindowsFormsApplication1
                     selectedRow.Cells["Dongianhap"].Value = updatedDongianhap;
                     selectedRow.Cells["Dongiaban"].Value = updatedDongiaban;
                     selectedRow.Cells["Ghichu"].Value = updatedGhichu;
-                    // Cập nhật các thông tin khác nếu cần
                 };
 
                 // Hiển thị form chỉnh sửa

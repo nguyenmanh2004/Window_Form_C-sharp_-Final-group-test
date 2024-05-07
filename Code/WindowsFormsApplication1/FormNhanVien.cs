@@ -85,16 +85,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txtMaNV_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Dungchung.cnn.Close();
@@ -132,26 +122,6 @@ namespace WindowsFormsApplication1
                 // Hiển thị toàn bộ bảng
                 ds.Tables[0].DefaultView.RowFilter = "";
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-          
         }
 
         private void button1_Click(object sender, EventArgs e)

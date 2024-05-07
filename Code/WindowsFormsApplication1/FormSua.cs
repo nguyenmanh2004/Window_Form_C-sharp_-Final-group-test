@@ -13,7 +13,6 @@ namespace WindowsFormsApplication1
     public delegate void CapNhatThongTinHandler(string maHangHoa, string tenHangHoa, string tenChatLieu, string soLuong, string donGiaNhap, string donGiaBan, string ghiChu);
     public partial class FormSua : Form
     {
-        //public event Action<string, string, string, string, string, string, string> CapNhatThongTin;
         public event CapNhatThongTinHandler CapNhatThongTin;
         public FormSua(string maHangHoa, string tenHangHoa, string tenChatLieu, string soLuong, string donGiaNhap, string donGiaBan, string ghiChu)
         {
