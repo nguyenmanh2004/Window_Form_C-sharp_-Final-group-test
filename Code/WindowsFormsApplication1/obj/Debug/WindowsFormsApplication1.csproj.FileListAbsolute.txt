@@ -90,3 +90,4 @@ C:\Users\LHUser\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsForm
 C:\Users\LHUser\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormNhanVien2.resources
 C:\Users\LHUser\Downloads\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormSua.resources
 D:\Nhom\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmKhachHang.resources
+C:\Users\Phuc Tran\Documents\Bài Window Form\Window_Form_C-sharp_-Final-group-test\Code\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FrmKhachHang.resources
