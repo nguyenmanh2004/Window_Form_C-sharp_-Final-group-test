@@ -16,6 +16,8 @@ namespace WindowsFormsApplication1.Class
         public static SqlConnection cnn = new SqlConnection();
         public static SqlDataAdapter da;
         public static DataTable dt = new DataTable();
+        public static SqlDataAdapter datblHang;
+        public static DataTable dttblHang = new DataTable();
         public static SqlCommand cmd;
         public static SqlCommandBuilder cmb;
         public static void KetNoi()
